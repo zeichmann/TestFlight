@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tenants", "Tenants", "{222FBF88-791D-4B2D-A5DD-9A079D5D66CC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TenantA", "TenantA\TenantA.csproj", "{9BC6FC5D-A5EF-4C0E-8472-791DA948CC32}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Neuca.TestFlight.Abstraction", "Neuca.TestFlight.Abstraction\Neuca.TestFlight.Abstraction.csproj", "{E0B8F955-9B25-4C47-9121-2582F1BB6EDF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TenantB", "TenantB\TenantB.csproj", "{9FE34727-532F-411A-BA65-E401F83696B5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Neuca.TestFlight.Domain", "Neuca.TestFlight.Domain\Neuca.TestFlight.Domain.csproj", "{E3BC1848-CEA4-4A7F-9FEB-794308FCCA43}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Neuca.TestFlight.Application", "Neuca.TestFlight.Application\Neuca.TestFlight.Application.csproj", "{C8CF6749-E709-4E8D-972C-3CDAC4582F68}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Neuca.TestFlight.Infrastructure", "Neuca.TestFlight.Infrastructure\Neuca.TestFlight.Infrastructure.csproj", "{BF724063-4AB6-495B-BF48-5713F69A4DDB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Neuca.TestFlight.Api", "Neuca.TestFlight.Api\Neuca.TestFlight.Api.csproj", "{013DB383-4D39-4C43-9CD5-755865B6360D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9BC6FC5D-A5EF-4C0E-8472-791DA948CC32}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9BC6FC5D-A5EF-4C0E-8472-791DA948CC32}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9BC6FC5D-A5EF-4C0E-8472-791DA948CC32}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9BC6FC5D-A5EF-4C0E-8472-791DA948CC32}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E0B8F955-9B25-4C47-9121-2582F1BB6EDF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E0B8F955-9B25-4C47-9121-2582F1BB6EDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E0B8F955-9B25-4C47-9121-2582F1BB6EDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E0B8F955-9B25-4C47-9121-2582F1BB6EDF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9FE34727-532F-411A-BA65-E401F83696B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9FE34727-532F-411A-BA65-E401F83696B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9FE34727-532F-411A-BA65-E401F83696B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9FE34727-532F-411A-BA65-E401F83696B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E3BC1848-CEA4-4A7F-9FEB-794308FCCA43}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3BC1848-CEA4-4A7F-9FEB-794308FCCA43}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3BC1848-CEA4-4A7F-9FEB-794308FCCA43}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3BC1848-CEA4-4A7F-9FEB-794308FCCA43}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8CF6749-E709-4E8D-972C-3CDAC4582F68}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8CF6749-E709-4E8D-972C-3CDAC4582F68}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8CF6749-E709-4E8D-972C-3CDAC4582F68}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8CF6749-E709-4E8D-972C-3CDAC4582F68}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF724063-4AB6-495B-BF48-5713F69A4DDB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF724063-4AB6-495B-BF48-5713F69A4DDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF724063-4AB6-495B-BF48-5713F69A4DDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF724063-4AB6-495B-BF48-5713F69A4DDB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{013DB383-4D39-4C43-9CD5-755865B6360D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{013DB383-4D39-4C43-9CD5-755865B6360D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{013DB383-4D39-4C43-9CD5-755865B6360D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{013DB383-4D39-4C43-9CD5-755865B6360D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{9BC6FC5D-A5EF-4C0E-8472-791DA948CC32} = {222FBF88-791D-4B2D-A5DD-9A079D5D66CC}
+		{9FE34727-532F-411A-BA65-E401F83696B5} = {222FBF88-791D-4B2D-A5DD-9A079D5D66CC}
+	EndGlobalSection
+EndGlobal

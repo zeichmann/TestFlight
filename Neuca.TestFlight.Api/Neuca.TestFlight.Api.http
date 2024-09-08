@@ -1,0 +1,45 @@
+@Neuca.TestFlight.Api_HostAddress = http://localhost:5166
+
+GET {{Neuca.TestFlight.Api_HostAddress}}/criteria/
+Accept: application/json
+###
+
+GET {{Neuca.TestFlight.Api_HostAddress}}/flights/
+Accept: application/json
+###
+
+GET {{Neuca.TestFlight.Api_HostAddress}}/flight-prices/
+Accept: application/json
+###
+
+GET {{Neuca.TestFlight.Api_HostAddress}}/me/
+Accept: application/json
+###
+
+GET {{Neuca.TestFlight.Api_HostAddress}}/me/prices?flightId="SQA25XKD"
+Accept: application/json
+###
+
+GET {{Neuca.TestFlight.Api_HostAddress}}/tenants/
+Accept: application/json
+###
+
+GET {{Neuca.TestFlight.Api_HostAddress}}/neuca-users/
+Accept: application/json
+###
+
+POST {{Neuca.TestFlight.Api_HostAddress}}/sign-in?username=Ewa HTTP/1.1
+Accept: application/json
+Content-Type: application/json
+
+###
+POST {{Neuca.TestFlight.Api_HostAddress}}/flight-prices HTTP/1.1
+Accept: application/json
+Content-Type: application/json
+
+{
+  "flightCode": "SQA25",
+  "day": "Sunday",
+  "hour": "10:10",
+  "price": 150
+}

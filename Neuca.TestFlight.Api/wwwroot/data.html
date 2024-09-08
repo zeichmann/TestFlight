@@ -1,0 +1,42 @@
+
+    <style>
+        body, html {
+            font-family: Arial;
+            height: auto;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: lightgray;
+        }
+
+        td {
+            white-space: nowrap;
+        }
+
+        .bold {
+        font-weight: bold;
+            }
+        .size {
+            font-size: 12px !important;            
+           }
+    </style>
+<html>
+
+<body class='size'>
+
+<div>
+<table width=100%><tr>
+<td width=50%></td>
+<td nowrap><a href="/model.html">Model</a></td><td>|<td>
+<td nowrap><a href="/data.html"><b>Seed Data</b></a></td><td>|<td> 
+<td nowrap><a href="/swagger">Swagger</a></td>
+<td width=50%></td>
+</tr></table>
+
+<br/><br/>
+
+<table width=100%><tr><td width=50%></td><td><table border=1 cellspacing=2 cellpadding=2><tr><td colspan='10' style='background-color: silver' align=middle><strong>FlightNumbers</strong></td><tr/><tr><td class='bold'>Id</td><td class='bold'>Code</td><td class='bold'>From</td><td class='bold'>To</td><td>Continent</td><td class='bold'>AvailableDaysOfWeek</td><tr><td>de6cca8c-6734-42f0-a7a1-aa4df04201fd</td><td>AAA100</td><td>Nowy Jork (JFK)</td><td>Londyn (LHR)</td><td>NotAfrica</td><td>Monday, Tuesday, Saturday, Sunday</td></tr><tr><td>f9304a34-e17e-4b90-b5be-355d2b787e38</td><td>BAA202</td><td>Boston (BOS)</td><td>Londyn (LHR)</td><td>NotAfrica</td><td>Saturday, Sunday</td></tr><tr><td>6f333014-1aea-4580-ae0d-aa8d2cf592ce</td><td>LHA401</td><td>Nowy Jork (JFK)</td><td>Frankfurt (FRA)</td><td>NotAfrica</td><td>Saturday, Sunday</td></tr><tr><td>3157d81c-f337-48d4-b7d3-5233c16ca186</td><td>AFA007</td><td>Nowy Jork (JFK)</td><td>Paryż (CDG)</td><td>NotAfrica</td><td>Saturday, Sunday</td></tr><tr><td>fd27b907-fe6d-4ec4-b436-2ecd45f4d646</td><td>KLA642</td><td>Nowy Jork (JFK)</td><td>Amsterdam (AMS)</td><td>NotAfrica</td><td>Saturday, Sunday</td></tr><tr><td>c7476cd5-fe18-43ed-9836-0325c5ddb202</td><td>UAA931</td><td>San Francisco (SFO)</td><td>Londyn (LHR)</td><td>NotAfrica</td><td>Saturday, Sunday</td></tr><tr><td>a3bfe5c3-28f6-4979-a835-91d14194d534</td><td>EKA203</td><td>Dubaj (DXB)</td><td>Nowy Jork (JFK)</td><td>NotAfrica</td><td>Saturday, Sunday</td></tr><tr><td>59c38a23-2ac4-4a47-9dcd-209cf32decbb</td><td>QFA12</td><td>Los Angeles (LAX)</td><td>Sydney (SYD)</td><td>NotAfrica</td><td>Saturday, Sunday</td></tr><tr><td>f95feeb4-ae13-4109-ba8d-55f559fbe2df</td><td>CXA831</td><td>Nowy Jork (JFK)</td><td>Hongkong (HKG)</td><td>NotAfrica</td><td>Saturday, Sunday</td></tr><tr><td>c0de0d89-1da9-410e-8ac7-97d541f328f7</td><td>SQA25</td><td>Nowy Jork (JFK)</td><td>Somalia Land</td><td>Africa</td><td>Monday, Saturday, Sunday</td></tr></tr></table></td><td width=50%></td></tr></table><br/><br/><table width=100%><tr><td width=50%></td><td><table border=1 cellspacing=2 cellpadding=2><tr><td colspan='10' style='background-color: silver' align=middle><strong>Flights</strong></td><tr/><tr><td class='bold'>Id</td><td class='bold'>FlightId</td><td class='bold'>IndividualId</td><td class='bold'>FlightTime</td><tr><td>b0a5395a-f6fb-4d87-87a9-480e487422b7</td><td>SQA25XKJ</td><td>XKJ</td><td>04.11.2024 17:20:00</td></tr><tr><td>166781c2-7e45-4d09-8802-886a3ba37cd3</td><td>SQA25XKD</td><td>XKD</td><td>04.11.2024 10:50:00</td></tr></tr></table></td><td width=50%></td></tr></table><br/><br/><table width=100%><tr><td width=50%></td><td><table border=1 cellspacing=2 cellpadding=2><tr><td colspan='10' style='background-color: silver' align=middle><strong>FlightPrices</strong></td><tr/><tr><td class='bold'>Id</td><td class='bold'>DayOfWeek</td><td class='bold'>Hour</td><td class='bold'>FlightNumberId</td><td class='bold'>Price</td></tr><tr><td>2f58f58d-6b4c-4059-91ed-e5b3d332d844</td><td>Monday</td><td>17:20:00</td><td>c0de0d89-1da9-410e-8ac7-97d541f328f7</td><td>20</td></tr><tr><td>7cc4b10d-a186-4083-bf5a-66f9ba7017f5</td><td>Monday</td><td>10:50:00</td><td>c0de0d89-1da9-410e-8ac7-97d541f328f7</td><td>50</td></tr><tr><td>75512a9b-7cff-4150-a6a8-0f533546ffad</td><td>Monday</td><td>10:50:00</td><td>de6cca8c-6734-42f0-a7a1-aa4df04201fd</td><td>100</td></tr></tr></table></td><td width=50%></td></tr></table><br/><br/><table width=100%><tr><td width=50%></td><td><table border=1 cellspacing=2 cellpadding=2><tr><td colspan='10' style='background-color: silver' align=middle><strong>Tenants</strong></td><tr/><tr><td class='bold'>Id</td><td class='bold'>Code</td><td class='bold'>DllReference</td><td class='bold'>FullServiceClassName</td></tr><tr><td>17488f62-828d-40de-adee-cbe250895672</td><td>B</td><td>TenantB.dll</td><td>TenantB.TenantService</td></tr><tr><td>301301b7-e136-4035-aee5-7cc18b651b79</td><td>A</td><td>TenantA.dll</td><td>TenantA.TenantService</td></tr></tr></table></td><td width=50%></td></tr></table><br/><br/><table width=100%><tr><td width=50%></td><td><table border=1 cellspacing=2 cellpadding=2><tr><td colspan='10' style='background-color: silver' align=middle><strong>Users</strong></td><tr/><tr><td class='bold'>Id</td><td class='bold'>Nickname</td><td class='bold'>DateOfBirth</td></tr><tr><td>a151f3ae-9e35-4895-9d2b-69c8a898fbe4</td><td>Ewa</td><td>20.12.1976</td></tr><tr><td>bd319048-9fc2-465b-a128-70376d588660</td><td>Adam</td><td>04.11.1976</td></tr></tr></table></td><td width=50%></td></tr></table><br/><br/>
+</div>
+</body>
+</html>

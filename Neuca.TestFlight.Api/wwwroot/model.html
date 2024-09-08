@@ -1,0 +1,43 @@
+
+<script src="//unpkg.com/graphre/dist/graphre.js"></script>
+<script src="//unpkg.com/nomnoml/dist/nomnoml.js"></script>
+<style>
+body, html {
+            font-family: Arial;
+            height: auto;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: lightgray;
+        }
+
+        td {
+            white-space: nowrap;
+        }
+        canvas {
+            width: 800px;            
+            background-color: lightgray;
+        }
+    </style>
+<canvas id="target-canvas"></canvas>
+<div style="position:absolute; top:10px">
+<table width=100%><tr>
+<td width=50%></td>
+<td nowrap><a href="/model.html"><b>Model</b></a></td><td>|<td>
+<td nowrap><a href="/data.html">Seed Data</a></td><td>|<td> 
+<td nowrap><a href="/swagger">Swagger</a></td>
+<td width=50%></td>
+</tr></table>
+
+<br/><br/>
+
+</div>
+<script>
+    var canvas = document.getElementById('target-canvas')
+    var source = '[<table>Criteria | (PK) Id | Guid ||CriteriaName | String ||Discount | Decimal ||FlightId | Guid ||InitialPrice | Decimal ||TenantId | Guid ||UserId | Guid]\n[Criteria] o-> [Tenant]\n[Criteria] o-> [NeucaUser]\n\n[<table>Flight | (PK) Id | Guid ||FlightNumberId | Guid ||FlightTime | DateTime ||IndividualId | String]\n[Flight] o-> [FlightNumber]\n\n[<table>FlightNumber | (PK) Id | Guid ||AvailableDaysOfWeek | DaysOfWeek ||Code | String ||Continent | String ||From | String ||To | String]\n\n[<table>NeucaUser | (PK) Id | Guid ||DateOfBirth | DateOnly ||Nickname | String ||TenantId | Guid]\n[NeucaUser] o-> [Tenant]\n\n[<table>Tenant | (PK) Id | Guid ||Code | String ||DllReference | String ||FullServiceClassName | String]\n\n[<table>FlightPrice | (PK) Id | Guid ||DayOfWeek | DaysOfWeek ||FlightNumberId | Guid ||Hour | TimeSpan ||Price | Decimal]\n[FlightPrice] o-> [FlightNumber]\n\n'
+    
+    nomnoml.draw(canvas, source)
+
+</script>
+    

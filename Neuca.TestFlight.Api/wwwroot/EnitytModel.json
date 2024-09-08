@@ -1,0 +1,309 @@
+[
+  {
+    "Name": "Criteria",
+    "Properties": [
+      {
+        "PropertyName": "Id",
+        "PropertyType": "Guid",
+        "IsPrimaryKey": true,
+        "IsNullable": false
+      },
+      {
+        "PropertyName": "CriteriaName",
+        "PropertyType": "String",
+        "IsPrimaryKey": false,
+        "IsNullable": false
+      },
+      {
+        "PropertyName": "Discount",
+        "PropertyType": "Decimal",
+        "IsPrimaryKey": false,
+        "IsNullable": false
+      },
+      {
+        "PropertyName": "FlightId",
+        "PropertyType": "Guid",
+        "IsPrimaryKey": false,
+        "IsNullable": false
+      },
+      {
+        "PropertyName": "InitialPrice",
+        "PropertyType": "Decimal",
+        "IsPrimaryKey": false,
+        "IsNullable": false
+      },
+      {
+        "PropertyName": "TenantId",
+        "PropertyType": "Guid",
+        "IsPrimaryKey": false,
+        "IsNullable": false
+      },
+      {
+        "PropertyName": "UserId",
+        "PropertyType": "Guid",
+        "IsPrimaryKey": false,
+        "IsNullable": false
+      }
+    ],
+    "Keys": [
+      {
+        "KeyName": [
+          "Id"
+        ]
+      }
+    ],
+    "ForeignKeys": [
+      {
+        "PrincipalTable": "Tenant",
+        "PrincipalColumns": [
+          "Id"
+        ],
+        "DependentColumns": [
+          "TenantId"
+        ]
+      },
+      {
+        "PrincipalTable": "NeucaUser",
+        "PrincipalColumns": [
+          "Id"
+        ],
+        "DependentColumns": [
+          "UserId"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "Flight",
+    "Properties": [
+      {
+        "PropertyName": "Id",
+        "PropertyType": "Guid",
+        "IsPrimaryKey": true,
+        "IsNullable": false
+      },
+      {
+        "PropertyName": "FlightNumberId",
+        "PropertyType": "Guid",
+        "IsPrimaryKey": false,
+        "IsNullable": false
+      },
+      {
+        "PropertyName": "FlightTime",
+        "PropertyType": "DateTime",
+        "IsPrimaryKey": false,
+        "IsNullable": false
+      },
+      {
+        "PropertyName": "IndividualId",
+        "PropertyType": "String",
+        "IsPrimaryKey": false,
+        "IsNullable": false
+      }
+    ],
+    "Keys": [
+      {
+        "KeyName": [
+          "Id"
+        ]
+      }
+    ],
+    "ForeignKeys": [
+      {
+        "PrincipalTable": "FlightNumber",
+        "PrincipalColumns": [
+          "Id"
+        ],
+        "DependentColumns": [
+          "FlightNumberId"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "FlightNumber",
+    "Properties": [
+      {
+        "PropertyName": "Id",
+        "PropertyType": "Guid",
+        "IsPrimaryKey": true,
+        "IsNullable": false
+      },
+      {
+        "PropertyName": "AvailableDaysOfWeek",
+        "PropertyType": "DaysOfWeek",
+        "IsPrimaryKey": false,
+        "IsNullable": false
+      },
+      {
+        "PropertyName": "Code",
+        "PropertyType": "String",
+        "IsPrimaryKey": false,
+        "IsNullable": false
+      },
+      {
+        "PropertyName": "Continent",
+        "PropertyType": "String",
+        "IsPrimaryKey": false,
+        "IsNullable": false
+      },
+      {
+        "PropertyName": "From",
+        "PropertyType": "String",
+        "IsPrimaryKey": false,
+        "IsNullable": false
+      },
+      {
+        "PropertyName": "To",
+        "PropertyType": "String",
+        "IsPrimaryKey": false,
+        "IsNullable": false
+      }
+    ],
+    "Keys": [
+      {
+        "KeyName": [
+          "Id"
+        ]
+      }
+    ],
+    "ForeignKeys": []
+  },
+  {
+    "Name": "NeucaUser",
+    "Properties": [
+      {
+        "PropertyName": "Id",
+        "PropertyType": "Guid",
+        "IsPrimaryKey": true,
+        "IsNullable": false
+      },
+      {
+        "PropertyName": "DateOfBirth",
+        "PropertyType": "DateOnly",
+        "IsPrimaryKey": false,
+        "IsNullable": false
+      },
+      {
+        "PropertyName": "Nickname",
+        "PropertyType": "String",
+        "IsPrimaryKey": false,
+        "IsNullable": false
+      },
+      {
+        "PropertyName": "TenantId",
+        "PropertyType": "Guid",
+        "IsPrimaryKey": false,
+        "IsNullable": false
+      }
+    ],
+    "Keys": [
+      {
+        "KeyName": [
+          "Id"
+        ]
+      }
+    ],
+    "ForeignKeys": [
+      {
+        "PrincipalTable": "Tenant",
+        "PrincipalColumns": [
+          "Id"
+        ],
+        "DependentColumns": [
+          "TenantId"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "Tenant",
+    "Properties": [
+      {
+        "PropertyName": "Id",
+        "PropertyType": "Guid",
+        "IsPrimaryKey": true,
+        "IsNullable": false
+      },
+      {
+        "PropertyName": "Code",
+        "PropertyType": "String",
+        "IsPrimaryKey": false,
+        "IsNullable": false
+      },
+      {
+        "PropertyName": "DllReference",
+        "PropertyType": "String",
+        "IsPrimaryKey": false,
+        "IsNullable": false
+      },
+      {
+        "PropertyName": "FullServiceClassName",
+        "PropertyType": "String",
+        "IsPrimaryKey": false,
+        "IsNullable": false
+      }
+    ],
+    "Keys": [
+      {
+        "KeyName": [
+          "Id"
+        ]
+      }
+    ],
+    "ForeignKeys": []
+  },
+  {
+    "Name": "FlightPrice",
+    "Properties": [
+      {
+        "PropertyName": "Id",
+        "PropertyType": "Guid",
+        "IsPrimaryKey": true,
+        "IsNullable": false
+      },
+      {
+        "PropertyName": "DayOfWeek",
+        "PropertyType": "DaysOfWeek",
+        "IsPrimaryKey": false,
+        "IsNullable": false
+      },
+      {
+        "PropertyName": "FlightNumberId",
+        "PropertyType": "Guid",
+        "IsPrimaryKey": false,
+        "IsNullable": false
+      },
+      {
+        "PropertyName": "Hour",
+        "PropertyType": "TimeSpan",
+        "IsPrimaryKey": false,
+        "IsNullable": false
+      },
+      {
+        "PropertyName": "Price",
+        "PropertyType": "Decimal",
+        "IsPrimaryKey": false,
+        "IsNullable": false
+      }
+    ],
+    "Keys": [
+      {
+        "KeyName": [
+          "Id"
+        ]
+      }
+    ],
+    "ForeignKeys": [
+      {
+        "PrincipalTable": "FlightNumber",
+        "PrincipalColumns": [
+          "Id"
+        ],
+        "DependentColumns": [
+          "FlightNumberId"
+        ]
+      }
+    ]
+  }
+]
